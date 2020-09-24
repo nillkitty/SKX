@@ -1,5 +1,5 @@
 # **Thank You Dana!  (Overview)**
-***Note**:  If you're looking for an open source remake of the **arcade** version of Solmon's Key, see the [Open Solomon's Key](https://github.com/mdodis/OpenSolomonsKey) project.*
+***Note**:  If you're looking for an open source remake of the **arcade** version of Solomon's Key, see the [Open Solomon's Key](https://github.com/mdodis/OpenSolomonsKey) project.*
 
 SKX is an open source port (with enhancements) of the 1986 Tecmo game Solomon's Key for the NES.  Graphics and sound effects are borrowed from the original,  however the code is completely fresh.   SKX is written in C# for .NET Core using the MonoGame (formerly XNA) framework for input, audio, and graphics.
 
