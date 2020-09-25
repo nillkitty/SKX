@@ -46,7 +46,7 @@ Key/button bindings can be modified in the menu,  but the game comes with two se
 
 * Physics and enemy UI needs some minor tweaking to be accurate to the original
 
-# **Accuracy**
+# **A Note on Accuracy**
 The goal of the project is to use NES-accurate physics and enemy behavior.  Any help correcting parameters to make the game behave more accurately is appreciated.  Most classes contain a section of (usually private) variables labelled "Behavioral Parameters" that can be adjusted to tweak the gameplay of those elements.
 
 # **New Gameplay Elements**
@@ -75,7 +75,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 ## **New enemies**
 * All enemies now come in four different speeds (Slow, Normal, Fast, and Faster).  The original had between 1-3 speeds depending on enemy type.
 
-## **Miscellaneous Improvements**
+## **Miscellaneous Improvements (over the NES code)**
 * The engine supports rooms larger than a single screen.   The camera will pan to follow Dana as he gets near the edge of the viewport if the room is larger than the current view.
 * Rooms can have multiple doors (leading to different rooms or to the same room)
 * Rooms can have multiple keys
