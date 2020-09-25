@@ -1,15 +1,16 @@
 # **Thank You Dana!  (Overview)**
 ***Note**:  If you're looking for an open source remake of the **arcade** version of Solomon's Key, see the [Open Solomon's Key](https://github.com/mdodis/OpenSolomonsKey) project.*
 
-SKX is an open source port (with enhancements) of the 1986 Tecmo game Solomon's Key for the NES.  Graphics and sound effects are borrowed from the original,  however the code is completely fresh.   SKX is written in C# for .NET Core using the MonoGame (formerly XNA) framework for input, audio, and graphics.
+SKX is an open source port (with enhancements) of the 1986 Tecmo game Solomon's Key for the NES.  Graphics and sound effects are borrowed from the original,  however the code is completely fresh.   SKX is written in C# for .NET Core using the MonoGame (formerly XNA) framework for input, audio, and graphics and runs on Windows, Mac, and Linux.
 
 **Features**
 * Keyboard or gamepad input
 * Automatic save feature using one of 8 save slots
-* Easy and difficult modes
+* Easy, normal, and difficult modes
 * Various levels of scale
 * Fullscreen mode
 * Classic mode -- the original 52 levels from the NES
+* Classic+ mode -- the original 52 levels with added items and 20 new secret levels
 * SKX mode -- a new set of 60 levels specifically designed with the new gameplay elements in mind
 * New gameplay elements (see **New Gameplay Elements** below)
 * Debug mode
@@ -20,7 +21,7 @@ SKX should run on any system that supports .NET core,  simply download the binar
 
 Key/button bindings can be modified in the menu,  but the game comes with two sets of default controls for ease of use:
 
-## **Default Controls**
+## **Default Controls (Arrows)**
 | Binding | Keyboard | Gamepad |
 |--|--|--|
 | Up | Up Arrow | D-Pad Up
@@ -31,7 +32,7 @@ Key/button bindings can be modified in the menu,  but the game comes with two se
 | Fireball | A | X button 
 | Pause | Enter | Start button
 
-## **Alternate Controls**
+## **Alternate Controls (WASD)**
 | Binding | Keyboard | Gamepad |
 |--|--|--|
 | Up | W | D-Pad Up
@@ -51,7 +52,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 
 # **New Gameplay Elements**
 ## **New block types**
-* **Frozen blocks** are items or empty space trapped in ice.  The ice can be melted by coming in contact with a fireball (either Dana's or an enemy's), or by picking up the **Blue Jar** which immediately melts all frozen blocks in the game.   Dana can stand on frozen blocks but cannot break them using magic.
+* **Frozen blocks** are items or empty space trapped in ice.  The ice can be melted by coming in contact with a fireball (either Dana's or an enemy's), or by picking up the **Blue Jar** which immediately melts all frozen blocks in the room.   Dana can stand on frozen blocks but cannot break them using magic.
 
 * **Blue Doors** take Dana to a different part of the same room.   They must be opened first by finding a key.
 
@@ -67,7 +68,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 | Red Medicine of Meltona | Jar filled with red liquid | Like the Orange Jar of Meltona (which kills Demonheads and Salamanders) but also kills Ghosts, Nuels, and Wyverns.
 | Green Medicine of Meltona | Jar filled with green liquid | Like the Red Medicine of Meltona,  but also kills all Goblins, Wizards, and Panel Monsters
 | Black Medicine of Meltona | Jar filled with black liquid | Quite rare-- immediately kills all enemies in the room
-| Meltona Cocktail | Half-blue and half-orange Jar of Magdora | **Combination Item**: Adds both a super fireball and a regular fireball to Dana's scroll at the same time. |
+| Magdora Cocktail | Half-blue and half-orange Jar of Magdora | **Combination Item**: Adds both a super fireball and a regular fireball to Dana's scroll at the same time. |
 | Time and Money | White Jar with Gold Jewel | **Combination Item**:  Same as collecting a full bottle of life (Medicine of Edlem) as well as a gold jewel at the same time.
 | Scroll and Spell | Scroll and Blue Jar | **Combination Item**: Same as collecting a scroll and a fireball (Blue Jar of Magdora) at the same time. |
 | Blue Medicine of Meltona | Jar filled with blue liquid | Immediately melts all ice/frozen blocks in the room 
@@ -102,8 +103,8 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 Debug mode is very helpful during development and gives the developer control over a number of settings that aide in game code development.
 
 Once Debug Mode is active,  the following items will appear in the game's HUD:
-* Dana's X and Y position
-* Dana's X and Y velocity
+* X and Y position of the selected object (defaults to Dana)
+* X and Y velocity of the selected object (defaults to Dana)
 * FPS based on the elapsed duration of the previous game tick
 * Development variables A/B/C/D
 * Status of Dana:
@@ -142,6 +143,8 @@ Press F10 to toggle **Collision View**.   When collision view is active,  the fo
 * White number indicating the game objects' routine counter
 * Wallhugger objects (Sparkies, Dana's fireballs, etc.) will show the current travel direction (U/D/L/R) as well as the direction in which they are hugging a wall (U/D/L/R). 
 * Cyan dots indicating collision sensors
+
+You can press Shift+F10 to cycle through the active game objects,  which displays their properties in the HUD.
 
 Additionally,  the selected collision view object (which can be selected by using Shift+F10 to cycle through the active game objects) will replace the X/Y position and velocity displays in the HUD,  and the blocks the current object is colliding with will be tinted based on the sensor they are colliding with:
 
