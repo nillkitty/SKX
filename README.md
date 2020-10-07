@@ -293,7 +293,7 @@ Spawns mode is used to configure the automatic enemy spawns (which typically occ
 
 Each spawn point has a list of 1 or more items which will spawn (in the order listed) from that spawn point.   Use `[` and `]` to select which item in the list is being configured -- most of the same controls used in **Objects mode** applies to selected spawn list items.
 
-Just like in the NES version,  each spawn point has two sets of flags (32-bit bitmasks) that dictate how often an enemy is spawned from that spawnpoint.  **Phase 1** timing is used as soon as a level begins, and **Phase 2** timing is used once Phase 1 ends, and is looped for the remainder of the level.   Timings restart after a player dies.
+Just like in the NES version,  each spawn point has two sets of flags (32-bit bitmasks) that dictate how often an enemy is spawned from that spawnpoint.  **Phase 1** timing is used as soon as a level begins, and **Phase 2** timing is used once Phase 1 ends, and is looped for the remainder of the level.   Timings restart after a player dies.  In the editor,  timings are indicated by the red and green dots and can be toggled by clicking on each dot (or using the 9/0 keys as noted below).
 
 Each spawn point also has a **TTL** (time to live) which determines how long certain enemies (Demonheads and Salamanders) from that spawn point will live for until they disappear.
 
@@ -314,7 +314,10 @@ Each spawn point also has a **TTL** (time to live) which determines how long cer
 | 7 | | Change **clockwise** flag of selected spawn list item (Sparkies only)
 | 8 | | Change **alternate graphics** flag of selected spawn list item
 | z/Z | | Increase/decrease the **TTL** for spawn point
-| T | | Opens the **timings** window to change the timing flags for the selected spawn point
+| 0 | | Clears all **timing** bits
+| 9 | | Sets all **timing** bits
+| Shift+9 | | Sets every 2nd **timing** bit
+| Shift+0 | | Sets evert 4th **timing** bit
 
 ## **Magic Mode**
 Magic mode is used to configure location specific triggers (**Spells**) that account for a lot of gameplay logic that was hard-coded into the original NES game.
