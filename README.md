@@ -101,6 +101,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 
 # **Debug Mode**
 Debug mode is very helpful during development and gives the developer control over a number of settings that aide in game code development.
+Activate debug mode by typing the letters "DEBUG" during the pause menu.
 
 Once Debug Mode is active,  the following items will appear in the game's HUD:
 * X and Y position of the selected object (defaults to Dana)
