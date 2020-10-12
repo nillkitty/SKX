@@ -193,6 +193,7 @@ The current mode is shown in the HUD at the top-left.   A description of these m
 | D | Doors Mode | Used to edit destinations and other properties of doors 
 | S | Spawns Mode | Used to edit the location and behavior of dynamic spawns (mirrors)
 | M | Magic Mode | Used to edit room-specific magic triggers (like the original used in the Princess, Solomon, Page of Time, and Page of Space rooms)
+| C | Camera Mode | Used to edit dynamic camera boundaries for large levels
 
 ## **Controls for all Modes**
 The following controls work in all level editor modes:
@@ -244,7 +245,10 @@ The Background Mode is used to modify the tiles that make up the background.   I
 |  | Ctrl+Left Click | Fill a rectangle with the selected tile (from the last clicked position to the position of the ctrl+click)
 |  | Right Click | Pick up (like a dropper tool) the tile of the clicked cell and set that as the selected tile
 | ` (Tilde) | | Pulls open the tile picker
-| C/Shift+C | | Changes the room's background color
+|   | Ctrl+Mouse Wheel | Changes the room's background color via list of presets
+|   | Shift+Mouse Wheel | Changes R component of background color
+|   | Ctrl+Shift+Mouse Wheel | Changes G component of background color
+|   | Alt+Shift+Mouse Wheel | Changes B component of background color
 | F | | Fills the entire room with the currently selected tile
 | T | | Cycles the selected tile through the 3 "normal" tiles used in the original NES game (bricks, blocks, and stucco)
 
