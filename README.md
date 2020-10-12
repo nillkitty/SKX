@@ -223,7 +223,7 @@ Layout mode is used to edit the grid cells that make up a room.   Each cell in t
 
 | Key | Mouse | Action |
 |--|--|--|
-| P/L | Mouse Wheel | Scroll through selected cell type
+| '/" | Mouse Wheel | Scroll through selected cell type
 | Space | Middle Click | Cycle through cell modifiers (Normal, Covered, Cracked, Hidden, Frozen)
 |  | Left Click | Draw selected cell type to the clicked location 
 |  | Right Click | Pick up (like a dropper tool) the type of the clicked cell and set that as the selected cell type and modifier
@@ -237,7 +237,7 @@ The Background Mode is used to modify the tiles that make up the background.   I
 
 | Key | Mouse | Action |
 |--|--|--|
-| P/L | Mouse Wheel | Scroll through selected tile
+| '/" | Mouse Wheel | Scroll through selected tile
 | Space | Middle Click | Paste the current shrine's motif graphic at the current mouse position
 |  | Left Click | Draw selected tile to the clicked location 
 |  | Ctrl+Left Click | Fill a rectangle with the selected tile (from the last clicked position to the position of the ctrl+click)
@@ -256,7 +256,7 @@ Object mode is used to edit the initial placement of objects in the level (where
 |  | Left Drag | Move an object
 |  | Right Click | Deletes an object (if clicked on an object) or creates a new object (if clicked in empty space)
 | Space | Middle Click | Toggles or cycles through the object's **direction**.  Some objects only have Left/Right directions,  others have Up/Down/Left/Right as valid directions.
-| P/L | Mouse Wheel | Change the selected object's object **type**
+| '/" | Mouse Wheel | Change the selected object's object **type**
 | 1/2/3/4 | | Change the selected object's **speed** to 1, 2, 3 4
 | 5 | | Toggles an enemy's **drops fairy** flag.  In the original NES game,  only object number 0 would drop a fairy (if it was killable).
 | 6 | | Toggles an enemy's **drops key** flag.   Keys dropped by enemies act like an unconfigured key (opens all doors).
@@ -319,7 +319,7 @@ Each spawn point also has a **TTL** (time to live) which determines how long cer
 | [ | | **Previous item** in the spawn list 
 | ] | | **Next item** in the spawn list
 | Space | Middle Click | Change **direction** of selected spawn list item
-| P/L | Mouse Wheel | Cycle **type** of selected spawn list item 
+| '/" | Mouse Wheel | Cycle **type** of selected spawn list item 
 | 1/2/3/4 | | Change **speed** of selected spawn list item
 | 5 | | Change **drop fairy** flag of selected spawn list item
 | 6 | | Change **drop key** flag of selected spawn list item
@@ -352,7 +352,7 @@ resize trigger areas.
 |--|--|--|
 |  | Left Click | Sets rectangle top-left
 |  | Right Click | Sets rectangle bottom-right
-| P/L | Mouse Wheel | Select routine to edit
+| '/" | Mouse Wheel | Select routine to edit
 | Space | Middle Click | Toggle between editing routine trigger and routine bounds
 | q | | Select initial camera mode
 | y | | Toggle Y-wrapping
@@ -387,7 +387,7 @@ Controls used in Magic mode:
 |  | Right Click on Spell | **Deletes** spell
 |  | Right Click on Empty | **Creates** a spell
 | Space | Middle Click | Change **type** of selected spell
-| P/L | Mouse Wheel | Change **action** of selected spell
+| '/" | Mouse Wheel | Change **action** of selected spell
 
 Controls for action **Change Cell**:
 | Key | Mouse | Action |
