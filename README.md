@@ -76,6 +76,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 
 ## **New enemies**
 * All enemies now come in four different speeds (Slow, Normal, Fast, and Faster).  The original had between 1-3 speeds depending on enemy type.
+* Panel Monsters with the Clockwise flag set will breath fire (like Dragons and Salamanders) when Dana or a brick is directly in front of them, instead of shooting fireballs periodically.
 
 ## **Miscellaneous Improvements (over the NES code)**
 * The engine supports rooms larger than a single screen.   The camera will pan to follow Dana as he gets near the edge of the viewport if the room is larger than the current view.
@@ -260,7 +261,7 @@ Object mode is used to edit the initial placement of objects in the level (where
 | 1/2/3/4 | | Change the selected object's **speed** to 1, 2, 3 4
 | 5 | | Toggles an enemy's **drops fairy** flag.  In the original NES game,  only object number 0 would drop a fairy (if it was killable).
 | 6 | | Toggles an enemy's **drops key** flag.   Keys dropped by enemies act like an unconfigured key (opens all doors).
-| 7 | | Toggles the **clockwise** flag for Sparkies.
+| 7 | | Toggles the **clockwise** flag for Sparkies (or makes Panel Monsters breath fire)
 | 8 | | Toggles the **alternate graphics** flags.   Goblins become Wizards,  Ghosts becomes Wyverns,  Demonheads become weird looking demonheads.   In the original NES game this was done based on the ROM bank (based on the room's graphics skin) but in SKX this can be changed on a per-enemy basis.
 
 ## **Keys Mode**
@@ -355,8 +356,6 @@ resize trigger areas.
 | '/" | Mouse Wheel | Select routine to edit
 | Space | Middle Click | Toggle between editing routine trigger and routine bounds
 | q | | Select initial camera mode
-| y | | Toggle Y-wrapping
-| x | | Toggle X-wrapping
 | + | | Add new resize routine
 | - | | Delete selected resize routine
 
