@@ -214,6 +214,7 @@ The following controls work in all level editor modes:
 | F12 | Next room (by number)
 | Shift+F12 | Previous room (by number)
 | Backspace | | Delete everything
+| , | | Toggle mouse coordinate display
 
 ## **Layout Mode**
 Layout mode is used to edit the grid cells that make up a room.   Each cell in the room can be empty or contain an item (cell type), and also has a modifier:
