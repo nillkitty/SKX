@@ -8,6 +8,7 @@ SKX is an open source port (with enhancements) of the 1986 Tecmo game Solomon's 
 * Automatic save feature using one of 8 save slots
 * Easy, normal, and difficult modes
 * Various levels of scale
+* Multi-track dynamic music
 * Fullscreen mode
 * Classic mode -- the original 52 levels from the NES
 * Classic+ mode -- the original 52 levels with added items and 20 new secret levels
@@ -134,16 +135,22 @@ The following additional key bindings will be active whenever the debug HUD is s
 | J / I | Game Dev Variable B +/-
 | K / O | Game Dev Variable C +/-
 | L / P | Game Dev Variable D +/-
+| M | Toggle music info
+| R | Toggle routine counters on objects
+| T | Toggle timers on objects
+| B | Toggle hit boxes | Toggle hurt boxes
 | Y | Save Game Dev Variables
 
 ## **Collision View**
 Press F10 to toggle **Collision View**.   When collision view is active,  the following additional information is drawn to the gameplay area:
-* White rectangles representing game objects' hitboxes (collision area)
+* White rectangles representing game objects' hitboxes (collision area) (turn on with B key)
 * A Yellow rectangle shows the hitbox of the game object currently selected for collision view
-* Red rectangles representing game objects' hurtboxes (pain/damage area)
-* White number indicating the game objects' routine counter
+* Red rectangles representing game objects' hurtboxes (pain/damage area) (turn on with Shift+B)
+* White number indicating the game objects' routine counter (turn on with R key)
 * Wallhugger objects (Sparkies, Dana's fireballs, etc.) will show the current travel direction (U/D/L/R) as well as the direction in which they are hugging a wall (U/D/L/R). 
 * Cyan dots indicating collision sensors
+* Internal timer values (turn on with T key)
+* Music tracker debug info (turn on with M key)
 
 You can press Shift+F10 to cycle through the active game objects,  which displays their properties in the HUD.
 
@@ -204,6 +211,7 @@ The following controls work in all level editor modes:
 | Shift+F11 | Resume gameplay from disk (including title screen and intro animation)
 | F12 | Next room (by number)
 | Shift+F12 | Previous room (by number)
+| Backspace | | Delete everything
 
 ## **Layout Mode**
 Layout mode is used to edit the grid cells that make up a room.   Each cell in the room can be empty or contain an item (cell type), and also has a modifier:
@@ -219,8 +227,10 @@ Layout mode is used to edit the grid cells that make up a room.   Each cell in t
 | Space | Middle Click | Cycle through cell modifiers (Normal, Covered, Cracked, Hidden, Frozen)
 |  | Left Click | Draw selected cell type to the clicked location 
 |  | Right Click | Pick up (like a dropper tool) the type of the clicked cell and set that as the selected cell type and modifier
-| | Ctrl+Left Click | Set Dana's default starting position
+| | Ctrl+Left Click | Fill a rectangle with the selected item (from the last clicked position to the position of the ctrl+click)
 | ` (Tilde) | | Pulls open the cell picker
+| / | | Select dynamic audio effect
+| q | | Select camera mode
 
 ## **Background Mode**
 The Background Mode is used to modify the tiles that make up the background.   In the original (NES), the background was made up of a single tile that was tiled throughout the entire room,  plus an optional "motif" that was selected based on the current room's "shrine".   In SKX, the background can be made of any combination of tiles.
@@ -230,6 +240,7 @@ The Background Mode is used to modify the tiles that make up the background.   I
 | P/L | Mouse Wheel | Scroll through selected tile
 | Space | Middle Click | Paste the current shrine's motif graphic at the current mouse position
 |  | Left Click | Draw selected tile to the clicked location 
+|  | Ctrl+Left Click | Fill a rectangle with the selected tile (from the last clicked position to the position of the ctrl+click)
 |  | Right Click | Pick up (like a dropper tool) the tile of the clicked cell and set that as the selected tile
 | ` (Tilde) | | Pulls open the tile picker
 | C/Shift+C | | Changes the room's background color
