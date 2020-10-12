@@ -230,7 +230,7 @@ Layout mode is used to edit the grid cells that make up a room.   Each cell in t
 | | Ctrl+Left Click | Fill a rectangle with the selected item (from the last clicked position to the position of the ctrl+click)
 | ` (Tilde) | | Pulls open the cell picker
 | / | | Select dynamic audio effect
-| q | | Select camera mode
+| . | | Select music for level
 
 ## **Background Mode**
 The Background Mode is used to modify the tiles that make up the background.   In the original (NES), the background was made up of a single tile that was tiled throughout the entire room,  plus an optional "motif" that was selected based on the current room's "shrine".   In SKX, the background can be made of any combination of tiles.
@@ -331,6 +331,35 @@ Each spawn point also has a **TTL** (time to live) which determines how long cer
 | Shift+9 | | Sets every 2nd **timing** bit
 | Shift+0 | | Sets evert 4th **timing** bit
 
+## **Camera Mode**
+
+Camera mode is used to configure camera properties and dynamic resize routines.
+
+When the level is larger than the screen, the camera is always in one of three modes:
+* Locked -- It doesn't move
+* Unlocked -- It moves to follow Dana
+* LockedUntilNear -- The camera's locked but will unlock if Dana begins to move off the screen
+
+When the camera is unlocked, **CameraBounds** determines how far the camera can scroll before
+stopping.  By default CameraBounds is the same as the level bounds minus 8 pixels on the left and
+right sides
+
+Resize routines can be added to update the CameraBounds based on where Dana is located.  Any time Dana enters
+one of the resize routine's trigger areas,  the associated boundaries will be set.  You should avoid overlapping
+resize trigger areas.
+
+| Key | Mouse | Action |
+|--|--|--|
+|  | Left Click | Sets rectangle top-left
+|  | Right Click | Sets rectangle bottom-right
+| P/L | Mouse Wheel | Select routine to edit
+| Space | Middle Click | Toggle between editing routine trigger and routine bounds
+| q | | Select initial camera mode
+| y | | Toggle Y-wrapping
+| x | | Toggle X-wrapping
+| + | | Add new resize routine
+| - | | Delete selected resize routine
+
 ## **Magic Mode**
 Magic mode is used to configure location specific triggers (**Spells**) that account for a lot of gameplay logic that was hard-coded into the original NES game.
 
@@ -348,6 +377,7 @@ Magic mode is used to configure location specific triggers (**Spells**) that acc
 | Enable Scroll | None | Re-enables Dana's scroll | None
 | Secret Exit | None | Change the default room exit to the "secret" exit room number | 20, 44
 | Random Cell | Position | Pulls a random item from the room's "random list" and changes the cell at the specified position to a **Covered** block with that item (and removes the entry from the "random list").  If no more items exist in the random list,  a normal tan block is used. | 52 (Hidden)
+| Head Hit | Object Type, Count | Spawns an object of a specific type above the block when hit from underneath `count` number of times.  | 17, 39
 
 Controls used in Magic mode:
 
@@ -356,7 +386,7 @@ Controls used in Magic mode:
 |  | Left Click on Spell | **Selects** a spell
 |  | Right Click on Spell | **Deletes** spell
 |  | Right Click on Empty | **Creates** a spell
-| Space | Middle Click | Change **type** of selected spell (magic / automatic)
+| Space | Middle Click | Change **type** of selected spell
 | P/L | Mouse Wheel | Change **action** of selected spell
 
 Controls for action **Change Cell**:
