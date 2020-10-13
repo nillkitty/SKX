@@ -73,6 +73,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 | Time and Money | White Jar with Gold Jewel | **Combination Item**:  Same as collecting a full bottle of life (Medicine of Edlem) as well as a gold jewel at the same time.
 | Scroll and Spell | Scroll and Blue Jar | **Combination Item**: Same as collecting a scroll and a fireball (Blue Jar of Magdora) at the same time. |
 | Blue Medicine of Meltona | Jar filled with blue liquid | Immediately melts all ice/frozen blocks in the room 
+| Hourglass of Peace | Purple/Pink Hourglass | Destroys all enemy-spawning mirrors
 
 ## **New enemies**
 * All enemies now come in four different speeds (Slow, Normal, Fast, and Faster).  The original had between 1-3 speeds depending on enemy type.
