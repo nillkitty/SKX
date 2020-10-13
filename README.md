@@ -53,7 +53,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 
 # **New Gameplay Elements**
 ## **New block types**
-* **Frozen blocks** are items or empty space trapped in ice.  The ice can be melted by coming in contact with a fireball (either Dana's or an enemy's), or by picking up the **Blue Jar** which immediately melts all frozen blocks in the room.   Dana can stand on frozen blocks but cannot break them using magic.
+* **Frozen blocks** are items or empty space trapped in ice.  The ice can be melted by coming in contact with a fireball (either Dana's or an enemy's) or a Burns (flame enemy), or by picking up the **Blue Jar** which immediately melts all frozen blocks in the room.   Dana can stand on frozen blocks but cannot break them using magic.
 
 * **Blue Doors** take Dana to a different part of the same room.   They must be opened first by finding a key.
 
@@ -76,7 +76,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 
 ## **New enemies**
 * All enemies now come in four different speeds (Slow, Normal, Fast, and Faster).  The original had between 1-3 speeds depending on enemy type.
-* Panel Monsters with the Clockwise flag set will breath fire (like Dragons and Salamanders) when Dana or a brick is directly in front of them, instead of shooting fireballs periodically.
+* Panel Monsters have a new variant (set the `Clockwise` flag), which breathe fire (like Dragons and Salamanders) when Dana or a brick is directly in front of them, instead of shooting fireballs periodically.
 
 ## **Miscellaneous Improvements (over the NES code)**
 * The engine supports rooms larger than a single screen.   The camera will pan to follow Dana as he gets near the edge of the viewport if the room is larger than the current view.
@@ -85,7 +85,10 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 * Keys can open multiple doors (if applicable)
 * Rooms may contain more than two mirrors that spawn enemies
 * Dana's starting position in a room may be influenced by which exit he used in the previous room.
-* Rooms can wrap vertically.  (technically possible on the NES but not used in any actual rooms)
+* Rooms wrap vertically and horizontally -- just remove the walls.  (technically possible on the NES but not used in any actual rooms)
+* Dynamic Audio -- Each room can have a different "Audio Effect" which manipulates the pan and fade of each of the tracks in the multitrack music as a function of dana's position, life remaining, etc.
+* In game modes other than Classic, Dana can grow his scroll up to 18 slots (instead of 8).
+
 
 ## **Game Difficulty**
 | Difficulty | Starting Lives | Scroll Size | Fireball Range
