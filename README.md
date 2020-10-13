@@ -74,6 +74,7 @@ The goal of the project is to use NES-accurate physics and enemy behavior.  Any 
 | Scroll and Spell | Scroll and Blue Jar | **Combination Item**: Same as collecting a scroll and a fireball (Blue Jar of Magdora) at the same time. |
 | Blue Medicine of Meltona | Jar filled with blue liquid | Immediately melts all ice/frozen blocks in the room 
 | Hourglass of Peace | Purple/Pink Hourglass | Destroys all enemy-spawning mirrors
+| Question Potion | Potion with a '?' | Executes room-specific functionality -- or maybe even nothing -- it's a mystery
 
 ## **New enemies**
 * All enemies now come in four different speeds (Slow, Normal, Fast, and Faster).  The original had between 1-3 speeds depending on enemy type.
@@ -373,10 +374,18 @@ Magic mode is used to configure location specific triggers (**Spells**) that acc
 
 * A spell may have a prerequisite of having an inventory item of a specific type from a specific room
 * A spell may have a prerequisite of a previous spell being invoked (so that several triggers can be required for a specific action)
-* A spell is either invoked by casting magic at a specific location ("magic"),  or simply starting a room ("auto") and having met all other prerequisites.   If the latter is used, the location of the spell in the room's layout doesn't matter.
-* When a spell is invoked it is added to Dana's "inventory" so it can be referenced/checked in the future
-* A spell can have one of several actions:
+* A spell is either invoked TriggeroneDescription)
+* When a spell is invoked it is added to Dainventory" so it can be referenced/checked in the future
+* A spell can have one of several acImmediate | The spell executes as soon as pree
+### **Triggers**
+| Trigger | Description
+|--|--|
+| Immediate | The spell executes as soon as pre
+| CastsMagic | The spell executes when Dana casts magic on the spell's location
+| DanaTouches | The spell executes when Dana touches the spell's location
+| Potion | The spell executes when Dana ingests a Question Potion
 
+### **Types**
 | Spell Type | Parameters | Behavior | Used in NES Rooms
 |--|--|--|--|
 | Change Cell | Position, Cell Type, Modifier, Animate | Changes the layout cell at a specific X/Y to a specific type and modifier.  If "Animate" is true, an effect is shown, otherwise the cell is changed without any fanfare.  Note that the "FAKECONCRETE" cell type can be used to make a block that Dana can break but still looks gray. | Solomon, Princess, Page of Time, Page of Space
