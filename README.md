@@ -436,10 +436,17 @@ Controls for action **Random Cell**:
 | **Layout** | Room Attempt | Represents the a level layout (both on disk including initial object placements,  as well as the currently active level layout being manipulated by Dana/enemies).  
 | **ObjectPlacement** | Child of Layout | Used to define the starting position for a **GameObject** in a Layout
 | **Spawn** | Child of Layout | Used to define a spawn point in a room's layout
-| **SpanwItem** | Child of Spawn | Used to define an item in the list of enemies that are spawned from a **Spawn** point
+| **SpawnItem** | Child of Spawn | Used to define an item in the list of enemies that are spawned from a **Spawn** point
+| **Spell** | Child of Layout | Used to define a level-specific scripted behavior
 | **KeyInfo** | Child of Layout | Configures key information
 | **DoorInfo** | Child of Layout | Configures door information
 | **InventoryItem** | Child of Sesh | When Dana collects an item that is used later in gameplay logic,  it is added to his "inventory".   This includes keys, constellation symbols, shrines, golden wings, pages of time/space, etc.   The item stores what room, and at what location in that room, it was collected.
 | **Assets** | Application/Singleton | Holds the game's assets when loaded into memory |
-| **Sound** | (Static) | Manages sound
-| **Control** | (Static) | Manages input
+| **Sound** (Static methods) | (Static) | Manages sound
+| **Sound** (as an instance) | Application Lifetime | An instance of a loaded sound effect
+| **MultiTrack** | Application Lifetime | (inherits Sound) An instance of a sound that plays multiple tracks in parallel
+| **Track** | Application Lifetime | A single track in a MultiTrack sound; references the underlying sound as well as pan/fade controls
+| **Control** | (Static) | Manages input (keyboard, mouse, gamepad)
+| **Animation** | (Static) | Animation scripts
+| **Resize** | Child of Layout | Dynamic camera resize routine
+| **ExecutedSpell** | Child of Sesh | Goes into the Sesh once a spell has run so it can be detected later to compose complex logic conditions
