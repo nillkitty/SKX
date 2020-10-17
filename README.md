@@ -129,6 +129,7 @@ The following additional key bindings will be active whenever the debug HUD is s
 |--|--|--|
 | F1 | Restart level | Restart game
 | F2 | Increase life | 
+| F4 | Switch story |
 | F5 | Open all doors | Next room
 | F6 | Turn off debug mode
 | F7 | Pause game  |
@@ -305,8 +306,11 @@ Configured doors can have one of three exit types:
 |  | Left Click on Door | Selects a door
 |  | Right Click on Door | Deletes door configuration
 | Space | Middle Click | Toggle selected door's exit type
-| x/X | | Toggle target X position +/- 
-| z/X | | Toggle target Y position +/-
+| x/X | | Adjust target X position +/- 
+| z/X | | Adjust target Y position +/-
+| q/Q | | Adjust next room number
+| w/W | | Adjust golden wing room number
+| e/E | | Adjust secret room number (used by dark doors or 'secret exit' spells)
 | N | | Toggle room number sign above door
 | F | | Toggle "fast stars" for exit  (alternate exit and intro animations)
 
@@ -374,9 +378,9 @@ Magic mode is used to configure location specific triggers (**Spells**) that acc
 
 * A spell may have a prerequisite of having an inventory item of a specific type from a specific room
 * A spell may have a prerequisite of a previous spell being invoked (so that several triggers can be required for a specific action)
-* A spell is either invoked TriggeroneDescription)
 * When a spell is invoked it is added to Dainventory" so it can be referenced/checked in the future
-* A spell can have one of several acImmediate | The spell executes as soon as pree
+* A spell can have one of several triggers and action types:
+
 ### **Triggers**
 | Trigger | Description
 |--|--|
@@ -405,6 +409,10 @@ Controls used in Magic mode:
 |  | Right Click on Empty | **Creates** a spell
 | Space | Middle Click | Change **type** of selected spell
 | '/" | Mouse Wheel | Change **action** of selected spell
+| q/Q |  | Adjust required inventory room number
+| w/W | | Adjust required inventory cell type
+| e/E | | Adjust required spell room number
+| r/R | | Adjust required spell ID
 
 Controls for action **Change Cell**:
 | Key | Mouse | Action |
