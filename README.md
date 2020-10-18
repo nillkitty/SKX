@@ -145,6 +145,8 @@ The following additional key bindings will be active whenever the debug HUD is s
 | K / O | Game Dev Variable C +/-
 | L / P | Game Dev Variable D +/-
 | M | Toggle music info
+| V | Toggle inventory info
+| S | Toggle spells info
 | R | Toggle routine counters on objects
 | T | Toggle timers on objects
 | B | Toggle hit boxes | Toggle hurt boxes
@@ -390,17 +392,17 @@ Magic mode is used to configure location specific triggers (**Spells**) that acc
 | CastsMagic | The spell executes when Dana casts magic on the spell's location
 | DanaTouches | The spell executes when Dana touches the spell's location
 | Potion | The spell executes when Dana ingests a Question Potion
+| HeadHit | The spell executes when Dana hits his head on the block at the spell's location
 
 ### **Types**
 | Spell Type | Parameters | Behavior | Used in NES Rooms
 |--|--|--|--|
 | Change Cell | Position, Cell Type, Modifier, Animate | Changes the layout cell at a specific X/Y to a specific type and modifier.  If "Animate" is true, an effect is shown, otherwise the cell is changed without any fanfare.  Note that the "FAKECONCRETE" cell type can be used to make a block that Dana can break but still looks gray. | Solomon, Princess, Page of Time, Page of Space
-| Spawn Object | Spawn ID | Spawns one or more objects from a specific spawn point.  You should create a spawn point in Spawns mode that has no timing bits set. | None
+| Spawn Object | Spawn ID | Spawns one or more objects from a specific spawn point.  You should create a spawn point in Spawns mode that has no timing bits set. | 17, 39
 | Disable Scroll | None | Disable's Dana's scroll / ability to create fireballs | Solomon
 | Enable Scroll | None | Re-enables Dana's scroll | None
 | Secret Exit | None | Change the default room exit to the "secret" exit room number | 20, 44
 | Random Cell | Position | Pulls a random item from the room's "random list" and changes the cell at the specified position to a **Covered** block with that item (and removes the entry from the "random list").  If no more items exist in the random list,  a normal tan block is used. | 52 (Hidden)
-| Head Hit | Object Type, Count | Spawns an object of a specific type above the block when hit from underneath `count` number of times.  | 17, 39
 
 Controls used in Magic mode:
 
@@ -415,6 +417,7 @@ Controls used in Magic mode:
 | w/W | | Adjust required inventory cell type
 | e/E | | Adjust required spell room number
 | r/R | | Adjust required spell ID
+| z/Z | | Adjust requirement count
 
 Controls for action **Change Cell**:
 | Key | Mouse | Action |
