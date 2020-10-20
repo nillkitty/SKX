@@ -53,6 +53,8 @@ Key/button bindings can be modified in the menu,  but the game comes with two se
 # **A Note on Accuracy**
 The goal of the project is to use NES-accurate physics and enemy behavior.  Any help correcting parameters to make the game behave more accurately is appreciated.  Most classes contain a section of (usually private) variables labelled "Behavioral Parameters" that can be adjusted to tweak the gameplay of those elements.
 
+The mere act of implicitly removing technical limitations imposed by the NES changes the nature of the game.  Many rooms have slightly different enemy timimg as a result of the mere removal of lag and sprite limits.  
+
 # **New Gameplay Elements**
 ## **New block types**
 * **Frozen blocks** are items or empty space trapped in ice.  The ice can be melted by coming in contact with a fireball (either Dana's or an enemy's) or a Burns (flame enemy), or by picking up the **Blue Jar** which immediately melts all frozen blocks in the room.   Dana can stand on frozen blocks but cannot break them using magic.
