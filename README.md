@@ -214,6 +214,9 @@ The following controls work in all level editor modes:
 | F1 | Reset level and layout to the one on disk
 | F3 | Save level to disk as `room_xxxy.json`
 | Shift+F3 | Delete the level file on disk (restores the room to its stock layout)
+| F4 | Room swap (prompts for room to swap with)
+| Shift+F4 | Save as... (prompts for room number to save to)
+| Ctrl+F4 | Copy room to... (prompts for story ID and room number to save to)
 | F9 / Shift+F9 | Cycles through the **shrine** for the current room
 | F7 | Increase room width by 1 column
 | Shift+F7 | Decrease room width by 1 column
@@ -228,8 +231,8 @@ The following controls work in all level editor modes:
 | Backspace | | Delete everything
 | , | | Toggle mouse coordinate display
 
-## **Layout Mode**
-Layout mode is used to edit the grid cells that make up a room.   Each cell in the room can be empty or contain an item (cell type), and also has a modifier:
+## **Level Mode**
+Level mode is used to edit the grid cells that make up a room.   Each cell in the room can be empty or contain an item (cell type), and also has a modifier:
 * **Normal** - Used for empty space, regular tan and gray blocks, and items that are visible for Dana to grab
 * **Covered** - Used when an item is inside of a tan block.  If Dana breaks the block the item will become visible (Normal), unless Dana hits the block from below in which case the block will become Cracked.
 * **Cracked** - The item is inside of a cracked tan block.   Dana can usually hit the block again from below to completely break the block (unless the item is a "hard" item like a key, door, mirror, bat, etc.)
@@ -246,6 +249,8 @@ Layout mode is used to edit the grid cells that make up a room.   Each cell in t
 | ` (Tilde) | | Pulls open the cell picker
 | / | | Select dynamic audio effect
 | . | | Select music for level
+| N | | Edit room name (optional)
+
 
 ## **Background Mode**
 The Background Mode is used to modify the tiles that make up the background.   In the original (NES), the background was made up of a single tile that was tiled throughout the entire room,  plus an optional "motif" that was selected based on the current room's "shrine".   In SKX, the background can be made of any combination of tiles.
@@ -416,7 +421,7 @@ Controls used in Magic mode:
 | Space | Middle Click | Change **type** of selected spell
 | '/" | Mouse Wheel | Change **action** of selected spell
 | q/Q |  | Adjust required inventory room number
-| w/W | | Adjust required inventory cell type
+| w | | Set required inventory cell type (opens cell picker)
 | e/E | | Adjust required spell room number
 | r/R | | Adjust required spell ID
 | z/Z | | Adjust requirement count
