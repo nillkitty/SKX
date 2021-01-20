@@ -13,38 +13,14 @@ Check out the [Changelog](https://github.com/nillkitty/SKX/wiki/Changelog) or th
 * Multi-track dynamic music
 * Fullscreen mode
 * Classic mode -- the original 52 levels from the NES
-* Classic+ mode -- the original 52 levels with added items and 20 new secret levels
-* SKX mode -- a new set of 60 levels specifically designed with the new gameplay elements in mind
+* Plus mode -- the original 52 levels with added items and 200 added levels (and Dana gets an apprentice)
 * New gameplay elements (see **New Gameplay Elements** below)
-* Debug mode
 * Integrated level editor
 
 # **Usage**
 SKX should run on any system that supports .NET core.  Self-contained Windows, MacOS, and Linux executables are available, as well as the .NET core version (.dll) which can be run from any platform using the command `dotnet SKX` from within the unzipped directory.
 
 Key/button bindings can be modified in the menu,  but the game comes with two sets of default controls for ease of use:
-
-## **Default Controls (Arrows)**
-| Binding | Keyboard | Gamepad |
-|--|--|--|
-| Up | Up Arrow | D-Pad Up
-| Down | Down Arrow | D-Pad Down
-| Left | Left Arrow | D-Pad Left
-| Right | Right Arrow | D-Pad Right
-| Magic | S | A button 
-| Fireball | A | X button 
-| Pause | Enter | Start button
-
-## **Alternate Controls (WASD)**
-| Binding | Keyboard | Gamepad |
-|--|--|--|
-| Up | W | D-Pad Up
-| Down | S | D-Pad Down
-| Left | A | D-Pad Left
-| Right | D | D-Pad Right
-| Magic | Right Shift | A button 
-| Fireball | / | X button 
-| Pause | Enter | Start button
 
 # **Known Issues/Missing Functionality**
 * Enemy UI needs some minor tweaking to be accurate to the original
@@ -55,7 +31,7 @@ Key/button bindings can be modified in the menu,  but the game comes with two se
 # **A Note on Accuracy**
 The goal of the project is to use NES-accurate physics and enemy behavior.  Any help correcting parameters to make the game behave more accurately is appreciated.  Most classes contain a section of (usually private) variables labelled "Behavioral Parameters" that can be adjusted to tweak the gameplay of those elements.
 
-The mere act of implicitly removing technical limitations imposed by the NES changes the nature of the game.  Many rooms have slightly different enemy timimg as a result of the mere removal of lag and sprite limits.  
+The mere act of implicitly removing technical limitations imposed by the NES changes the nature of the game.  Many rooms (Room 7, for example) have slightly different enemy timimg as a result of the mere removal of lag and sprite limits.  
 
 # New Gameplay Elements
 * New items
@@ -88,3 +64,9 @@ The game features a fully featured level editor and diagnostics modes.  See the 
 * Rooms wrap vertically and horizontally -- just remove the walls.  (technically possible on the NES but not used in any actual rooms)
 * Dynamic Audio -- Each room can have a different "Audio Effect" which manipulates the pan and fade of each of the tracks in the multitrack music as a function of dana's position, life remaining, etc.
 * In game modes other than Classic, Dana can grow his scroll up to 18 slots (instead of 8).
+* Pixel shader backgrounds
+* Full aetheitic control over the background layer and the super foreground layer which are independent from the normal foreground layer Dana stands on
+* Demo recording and playback support
+* Unlimited spawn points and spawn types per room
+* Special behaviors in certain rooms (17, 39, 20, 44, 49-53) which were hard-coded in the NES version have all been ported to "Magic Spells" -- lightweight editable scripts that are contained in the level data as objects
+* 
