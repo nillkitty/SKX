@@ -3,6 +3,8 @@
 
 SKX is an open source port (with enhancements) of the 1986 Tecmo game Solomon's Key for the NES.  Graphics and sound effects are borrowed from the original,  however the code is completely fresh.   SKX is written in C# for .NET Core using the MonoGame (formerly XNA) framework for input, audio, and graphics and runs on Windows, Mac, and Linux.
 
+Check out the [Changelog](https://github.com/nillkitty/SKX/wiki/Changelog) or the [Wiki](https://github.com/nillkitty/SKX/wiki/) for additional information about the current status of the beta builds.  The full source code and downloads will be available on this repo as soon as all major milestones are complete (1Q2021 estimated).
+
 **Features**
 * Keyboard or gamepad input
 * Automatic save feature using one of 8 save slots
@@ -18,7 +20,7 @@ SKX is an open source port (with enhancements) of the 1986 Tecmo game Solomon's 
 * Integrated level editor
 
 # **Usage**
-SKX should run on any system that supports .NET core,  simply download the binary version of the game,  and either run **SKX.exe** (Windows), or run the command `dotnet skx.exe` from the appropriate directory.
+SKX should run on any system that supports .NET core.  Self-contained Windows, MacOS, and Linux executables are available, as well as the .NET core version (.dll) which can be run from any platform using the command `dotnet SKX` from within the unzipped directory.
 
 Key/button bindings can be modified in the menu,  but the game comes with two sets of default controls for ease of use:
 
