@@ -23,12 +23,8 @@ SKX should run on any system that supports .NET core.  Self-contained Windows, M
 Key/button bindings can be modified in the menu,  but the game comes with two sets of default controls for ease of use:
 
 # **Known Issues/Missing Functionality**
-* Enemy UI needs some minor tweaking to be accurate to the original
-* Dana's collision with the level might need some review, especially when jumping diagnally at stair-shaped structures
-* Fairy UI is smoother but less accurate
-* Ending sequence not yet implemented
-* Dana's crouch-walking animation is not yet implemented
-
+See the [Issues](https://github.com/nillkitty/SKX/issues) section for what's known to be broken or missing.
+ 
 # **A Note on Accuracy**
 The goal of the project is to use NES-accurate physics and enemy behavior.  Any help correcting parameters to make the game behave more accurately is appreciated.  Most classes contain a section of (usually private) variables labelled "Behavioral Parameters" that can be adjusted to tweak the gameplay of those elements.
 
