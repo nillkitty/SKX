@@ -27,6 +27,7 @@ Key/button bindings can be modified in the menu,  but the game comes with two se
 * Dana's collision with the level might need some review, especially when jumping diagnally at stair-shaped structures
 * Fairy UI is smoother but less accurate
 * Ending sequence not yet implemented
+* Dana's crouch-walking animation is not yet implemented
 
 # **A Note on Accuracy**
 The goal of the project is to use NES-accurate physics and enemy behavior.  Any help correcting parameters to make the game behave more accurately is appreciated.  Most classes contain a section of (usually private) variables labelled "Behavioral Parameters" that can be adjusted to tweak the gameplay of those elements.
