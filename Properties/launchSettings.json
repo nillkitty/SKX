@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SKX": {
+      "commandName": "Project",
+      "commandLineArgs": "/s /d"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <AssemblyName>SKX</AssemblyName>
+    <RootNamespace>SKX</RootNamespace>
+    <Description />
+    <Company>Nill</Company>
+    <Product>Solomon's Key X</Product>
+    <PackageProjectUrl>https://github.com/nillkitty/skx</PackageProjectUrl>
+    <StartupObject>SKX.Program</StartupObject>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Dev-nill-2021-xca.pfx</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="1up.wav" />
+    <None Remove="break.wav" />
+    <None Remove="burn.wav" />
+    <None Remove="collect.wav" />
+    <None Remove="Content\cspace.bndl" />
+    <None Remove="Content\icon.bmp" />
+    <None Remove="die.wav" />
+    <None Remove="fairy.wav" />
+    <None Remove="fire.wav" />
+    <None Remove="gameover.wav" />
+    <None Remove="head.wav" />
+    <None Remove="hiss.wav" />
+    <None Remove="icon.bmp" />
+    <None Remove="key.wav" />
+    <None Remove="lowtime.wav" />
+    <None Remove="make.wav" />
+    <None Remove="pause.wav" />
+    <None Remove="rumble.wav" />
+    <None Remove="rumble2.wav" />
+    <None Remove="start.wav" />
+    <None Remove="thankyou.wav" />
+    <None Remove="wince.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\cspace.bndl" />
+    <EmbeddedResource Include="Content\icon.bmp" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Extended.Graphics" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\" />
+  </ItemGroup>
+</Project>

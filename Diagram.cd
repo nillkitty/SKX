@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SKX.Game">
+    <Position X="38.5" Y="1.75" Width="2.25" />
+    <Members>
+      <Field Name="Batch" Hidden="true" />
+      <Field Name="ConfigBinding" Hidden="true" />
+      <Field Name="ConfigPad" Hidden="true" />
+      <Field Name="ConfirmOverwriteMenu" Hidden="true" />
+      <Field Name="ControlsMenu" Hidden="true" />
+      <Field Name="DebounceTicks" Hidden="true" />
+      <Field Name="DebugModeCheatCode" Hidden="true" />
+      <Field Name="EditorMenu" Hidden="true" />
+      <Field Name="InputMenu" Hidden="true" />
+      <Field Name="KeyBindingMenu" Hidden="true" />
+      <Field Name="ListenForKeyMenu" Hidden="true" />
+      <Field Name="Native" Hidden="true" />
+      <Field Name="OptionsMenu" Hidden="true" />
+      <Field Name="PadBindingMenu" Hidden="true" />
+      <Field Name="QuitGameMenu" Hidden="true" />
+      <Field Name="SlotMenu" Hidden="true" />
+      <Field Name="StartMenu" Hidden="true" />
+      <Field Name="StoryMenu" Hidden="true" />
+    </Members>
+    <AssociationLine Name="World" Type="SKX.World" FixedToPoint="true">
+      <Path>
+        <Point X="38.5" Y="13.437" />
+        <Point X="31.75" Y="13.437" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>4afkmlOEQb2yRwmRRDpCBKWSpIQJnQBZYhwhopFQJnw=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="World" />
+      <Field Name="Sesh" />
+      <Field Name="Assets" />
+      <Field Name="Options" />
+      <Field Name="Menu" />
+      <Field Name="Difficulty" />
+      <Field Name="Story" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Swaps" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.World">
+    <Position X="29.25" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ASVAQACAAQBIQAAgAAAGACBEDMAACBEAAFACAQEJCEA=</HashCode>
+      <FileName>Modes\World.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Objects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Modes.AnimTest" Collapsed="true">
+    <Position X="33" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Modes\AnimTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Modes.ClassicEnding" Collapsed="true">
+    <Position X="35.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQCEAE4AAAAIAAAAAAAAAAAEKAAABAAAEBiBAAkACA=</HashCode>
+      <FileName>Modes\ClassicEnding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Level">
+    <Position X="23.5" Y="19.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>szVESxlDLgJC1CKEfhxHiv3UQo8IfYjKAIoGBiOhTkE=</HashCode>
+      <FileName>Modes\Level.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Layout" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SKX.Modes.LevelSelect" Collapsed="true">
+    <Position X="30.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADVAAAAAAgAASAAIBQCAAAACAIAIgACBAIAiAAACAAA=</HashCode>
+      <FileName>Modes\LevelSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Modes.SoundTest" Collapsed="true">
+    <Position X="26.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Modes\SoundTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Modes.TitleScreen" Collapsed="true">
+    <Position X="28.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAIAAAACAAAAAAAAAAIIIACAAAAAABCAIQEIAA=</HashCode>
+      <FileName>Modes\TitleScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.GameObject">
+    <Position X="25.5" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AY0AFBBoDdFKEIoxhKAARFUIkYSEAUIJCTACgAAM4Q4=</HashCode>
+      <FileName>Objects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Layout">
+    <Position X="20" Y="21" Width="2.5" />
+    <AssociationLine Name="Resizes" Type="SKX.Resize" FixedFromPoint="true">
+      <Path>
+        <Point X="20" Y="32.313" />
+        <Point X="18.25" Y="32.313" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Keys" Type="SKX.KeyInfo" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="20" Y="38.615" />
+        <Point X="18.25" Y="38.615" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="AudioEffect" Type="SKX.AudioEffect" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="22.312" />
+        <Point X="14.75" Y="22.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>RCNsQgEhHxUhlAoB2JFgPERHyKQwW4VNAdglGBXEPkA=</HashCode>
+      <FileName>Layout.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AudioEffect" />
+      <Property Name="Character" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="cells" />
+      <Property Name="Spawns" />
+      <Property Name="Spells" />
+      <Property Name="Resizes" />
+      <Property Name="Keys" />
+      <Property Name="Doors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Spawn">
+    <Position X="16.25" Y="33.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAgAACAAgAAAAAAgAAABAAAAAAAbAQ=</HashCode>
+      <FileName>Misc.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DropletType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="SpawnItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Spell">
+    <Position X="16.25" Y="26" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIQAACIIAAAAwJAkCBQAACAAAAAAAAABQQAAAAAAAAA=</HashCode>
+      <FileName>Spell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Trigger" />
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SKX.Resize">
+    <Position X="16.25" Y="31.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Misc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.DoorInfo">
+    <Position X="16.25" Y="22.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAAAgAAAAICAAAAAAAAAAAQAACAAAAAA=</HashCode>
+      <FileName>Layout.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SKX.Sesh">
+    <Position X="42.25" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>BAkCIoUAwQGFBWgAQBQEJIEkhBAQQRATOYFAQimCBNA=</HashCode>
+      <FileName>Sesh.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Inventory" />
+      <Property Name="SpellsExecuted" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Assets">
+    <Position X="35.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAkhAAAgBBAAAAAAAAAAAAAAggRAAAAQIAACAAABAA=</HashCode>
+      <FileName>Assets.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Bundle" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SKX.Options">
+    <Position X="35.75" Y="6.75" Width="2" />
+    <AssociationLine Name="Bindings" Type="SKX.SavedBinding" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="36.5" Y="6.75" />
+        <Point X="36.5" Y="5.342" />
+        <Point X="35.5" Y="5.342" />
+        <Point X="35.5" Y="4.312" />
+        <Point X="31" Y="4.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ControlLayout" Type="SKX.ControlLayout" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="35.75" Y="7.875" />
+        <Point X="35.375" Y="7.875" />
+        <Point X="35.375" Y="5.915" />
+        <Point X="33.25" Y="5.915" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAEABBCAAIAAAIAAAAAAAAAAAAAAkIAAAACAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ControlLayout" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Bindings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Sound">
+    <Position X="26.25" Y="21" Width="3.25" />
+    <AssociationLine Name="Sounds" Type="SKX.Sound" ManuallyRouted="true">
+      <Path>
+        <Point X="27.403" Y="34.737" />
+        <Point X="27.403" Y="35.39" />
+        <Point X="28.37" Y="35.39" />
+        <Point X="28.37" Y="34.737" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AFQghSEAgCCABoQnAAAFBAQASgwUIABg5IIgAA6CYIA=</HashCode>
+      <FileName>Sound.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Sounds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Control">
+    <Position X="36.75" Y="24.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>wARgEGIQIxACCQAQEEAEABADAAwEEAQGC0iSgABgEKI=</HashCode>
+      <FileName>Control.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Crouch" />
+      <Field Name="Down" />
+      <Field Name="Enter" />
+      <Field Name="Esc" />
+      <Field Name="Fireball" />
+      <Field Name="Game" />
+      <Field Name="Jump" />
+      <Field Name="Left" />
+      <Field Name="Magic" />
+      <Field Name="Pause" />
+      <Field Name="Right" />
+      <Field Name="Space" />
+      <Field Name="Up" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SKX.Bundle">
+    <Position X="33.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAgAAAAAAACAAAAAAEAAAAAAAAgAAAAAAAARAAAAA=</HashCode>
+      <FileName>Bundle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Demos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Demo">
+    <Position X="31" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAABAAIAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Demo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Frames" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Menu">
+    <Position X="32.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAgJAgAAAAEEAAAAAQAAkICBIAQQAAYoA=</HashCode>
+      <FileName>Menus.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MenuItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.MenuItem">
+    <Position X="29.25" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACACACQAAAAQ=</HashCode>
+      <FileName>Menus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Swap">
+    <Position X="35.25" Y="15.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAASAAAAAAAAAAAABAQEAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Misc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Burns" Collapsed="true">
+    <Position X="22.75" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SKX.Objects.Burns.BurnsType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Objects\Burns.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACQQAAAAAAAgAAAAAAAAAAAIgAAEIAAAAUQSgAAAAAA=</HashCode>
+      <FileName>Objects\Burns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Dana" Collapsed="true">
+    <Position X="22.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MIRAAIJcAZAJLCAidBoAuJEIAwSIoaACEpChBIEAdAM=</HashCode>
+      <FileName>Objects\Dana.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="State" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SKX.Objects.Demonhead" Collapsed="true">
+    <Position X="22.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAABAACAAAAABCABABgAAAAAEAAgACAAAAEQA=</HashCode>
+      <FileName>Objects\Demonhead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Dragon" Collapsed="true">
+    <Position X="20.25" Y="11.25" Width="1.5" />
+    <InheritanceLine Type="SKX.Objects.FireBreather" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.188" Y="11.191" />
+        <Point X="23.188" Y="11.491" />
+        <Point X="22.05" Y="11.491" />
+        <Point X="22.05" Y="11.625" />
+        <Point X="21.75" Y="11.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIQQAQAAABAACACAAABCABABgAAAAAEQADACAAAAEAE=</HashCode>
+      <FileName>Objects\Dragon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Droplet" Collapsed="true">
+    <Position X="22.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AOQSAgoAAhACiAAEBAQCgsIFgAMAAiAAAkwCggAgCQA=</HashCode>
+      <FileName>Objects\Droplet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.EnemyFireball" Collapsed="true">
+    <Position X="22.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAAAAQAAAAAAAAAABgAAAAAAABAACAAAAAAA=</HashCode>
+      <FileName>Objects\EnemyFireball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Fairy" Collapsed="true">
+    <Position X="22.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQBAAAAgQAAAAAAAAABAAAhAIAACAAACEACAAAAAAA=</HashCode>
+      <FileName>Objects\Fairy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Fireball" Collapsed="true">
+    <Position X="20.25" Y="7.5" Width="1.5" />
+    <InheritanceLine Type="SKX.Objects.Wallhugger" FixedToPoint="true">
+      <Path>
+        <Point X="23.5" Y="8.25" />
+        <Point X="23.5" Y="7.938" />
+        <Point X="21.75" Y="7.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAQQIAAAAQAAAAAAIAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Objects\Fireball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Wallhugger" Collapsed="true">
+    <Position X="22.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQCAABgQoAABAQAAAAAAAIBISAQICAAABAEAAAAAAA=</HashCode>
+      <FileName>Objects\Wallhugger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.FireBreather" Collapsed="true">
+    <Position X="22.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAABAQAAAAAACAAAAAAQgAAAAAQAAAAAAAABAE=</HashCode>
+      <FileName>Objects\FireBreather.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Gargoyle" Collapsed="true">
+    <Position X="22.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAEAAAABAAGIAAAAAGABABgJCAAAAQAAACACABFQA=</HashCode>
+      <FileName>Objects\Gargoyle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Ghost" Collapsed="true">
+    <Position X="22.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIYAAAAAAAQACACAAABCABBBAAACIAAAAgACAAABEAA=</HashCode>
+      <FileName>Objects\Ghost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Goblin" Collapsed="true">
+    <Position X="22.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoWQAQAAAxQAKABABABCAFABgAAAACQIgDACQAAAEAA=</HashCode>
+      <FileName>Objects\Goblin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Jack" Collapsed="true">
+    <Position X="22.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQEAAAAAAAAAAAAAAAAAAAAAAAAAAAACCACAAQAAAA=</HashCode>
+      <FileName>Objects\Jack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.PanelMonster" Collapsed="true">
+    <Position X="20.25" Y="9.75" Width="1.5" />
+    <InheritanceLine Type="SKX.Objects.FireBreather" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.188" Y="10.5" />
+        <Point X="23.188" Y="10.062" />
+        <Point X="21.75" Y="10.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>CIQCgIAAAAAAAAAAAAACEBABCAAAAAAQBBACAACAAAE=</HashCode>
+      <FileName>Objects\PanelMonster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Remains" Collapsed="true">
+    <Position X="22.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQg=</HashCode>
+      <FileName>Objects\Remains.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Reward" Collapsed="true">
+    <Position X="22.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAABEAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Reward.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Salamander" Collapsed="true">
+    <Position X="18.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAABAACAAAAABCAhABgAAAAAAQAhACAAAAEQE=</HashCode>
+      <FileName>Objects\Salamander.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Sparky" Collapsed="true">
+    <Position X="20.25" Y="8.75" Width="1.5" />
+    <InheritanceLine Type="SKX.Objects.Wallhugger" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.5" Y="8.941" />
+        <Point X="23.5" Y="9.125" />
+        <Point X="21.75" Y="9.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAAAACAAAAABAABAAAAAAAAAAAgACAAAAEAA=</HashCode>
+      <FileName>Objects\Sparky.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.StarCircle" Collapsed="true">
+    <Position X="22.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQABgAABACAgAAAAEQABCAJgAAgAAAAAhAAJAAAAAA=</HashCode>
+      <FileName>Objects\StarCircle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.StarPath" Collapsed="true">
+    <Position X="22.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAAAAAAAAAAAAACAJAAAgCAAAAAACBAAAAAA=</HashCode>
+      <FileName>Objects\StarPath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Superscript" Collapsed="true">
+    <Position X="19.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABAAAAAAAQA=</HashCode>
+      <FileName>Objects\Superscript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Tongue" Collapsed="true">
+    <Position X="19.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAAAAAAAQAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Objects\Tongue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Objects.Twinkle" Collapsed="true">
+    <Position X="19.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Twinkle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.SpawnItem">
+    <Position X="12" Y="33.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAACAAAAAAAAAAAAAQAQAAAAAAAAA=</HashCode>
+      <FileName>Misc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SKX.Try">
+    <Position X="33.5" Y="32.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAABAAAAAAAAQAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>List.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.MultiTrack">
+    <Position X="30.25" Y="21" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgQQBAAAAEAAAAQEAAQAAAQEgAQQAAAAoAJgGAgAAIA=</HashCode>
+      <FileName>Sound.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="MixPlan" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tracks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SKX.Track">
+    <Position X="34.5" Y="21" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAABgIAgAAAAAA=</HashCode>
+      <FileName>Sound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SKX.Binding">
+    <Position X="33.5" Y="29" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAIAAAAAAAQEAAAAAAwAAAAAAQAIAAAAAAAEAAI=</HashCode>
+      <FileName>Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SKX.KeyInfo">
+    <Position X="16.25" Y="37.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAgAABAAAAAA=</HashCode>
+      <FileName>Layout.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SKX.InventoryItem">
+    <Position X="46.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAQ=</HashCode>
+      <FileName>Sesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SKX.SpellExecuted">
+    <Position X="46.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sesh.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SKX.SavedBinding">
+    <Position X="28.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAQAAAACAAwAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Control.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SKX.ControlState">
+    <Position X="33.5" Y="27" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAgAAAACAAAAAAAAAAAAAAAAAAAAEAAI=</HashCode>
+      <FileName>Control.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Current" />
+      <Field Name="Previous" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="SKX.DemoFrame">
+    <Position X="28.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAA=</HashCode>
+      <FileName>Demo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SKX.MixPlan">
+    <Position X="33.5" Y="24.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAQAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sound.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="SKX.AudioEffect">
+    <Position X="12.75" Y="21.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAABAAAAAAAAAAAAIAAAAAAAAAAAIAAAAAEAAAA=</HashCode>
+      <FileName>Modes\Level.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.CharacterMode">
+    <Position X="12.75" Y="25.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAABAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Layout.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.Difficulty">
+    <Position X="36" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.Story">
+    <Position X="32.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAACAAGAAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.DoorType">
+    <Position X="12.75" Y="24" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAQAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Layout.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.Objects.DanaState">
+    <Position X="20.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Objects\Dana.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.DropletType">
+    <Position X="12" Y="35.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAmAAA=</HashCode>
+      <FileName>Misc.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.SpellTrigger">
+    <Position X="12.75" Y="27.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQBBAAEIAEAAAAAAAAAAAAAAAAAAAAAAAAAgCEAAAAA=</HashCode>
+      <FileName>Spell.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.SpellType">
+    <Position X="12.75" Y="30" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAACAAAAAwAAAAAAAYAAAAAgAAAAAREEAAAA=</HashCode>
+      <FileName>Spell.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.Cell">
+    <Position X="9" Y="14.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gUkYqRcHAwg5iQ540yesbEWkr4fSSipCw/bu6i49pqE=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.BindingState">
+    <Position X="30.75" Y="27" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgEAAAAgAAAAAAAAAAAAACAAAAAAAACACQAAEAAAA=</HashCode>
+      <FileName>Control.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SKX.ControlLayout">
+    <Position X="31.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAQAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
